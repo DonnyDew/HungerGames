@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hunger Games Simulator - Start</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="HungerGamesIcon.png" type="image/png">
+</head>
+<body>
+    <h1>Welcome to the Hunger Games Simulator</h1>
+    <div style="display: flex; align-items: center;">
+        <p>Enter the number of players:</p>
+        <input type="number" id="num-players" min="12" max="24" step="2" value="12" required>
+        <button id="create-player-fields">Create Player Fields</button>
+        <span id="num-players-error" style="color: red; margin-left: 10px;"></span>
+    </div>
+    <form id="player-form" style="display: none;">
+        <!-- Player input fields will be created here -->
+        <button type="submit">Create Players and Teams</button>
+    </form>
+    
+    <button id="start-simulation" style="display: none;">Start Simulation</button>
+    <script type="text/javascript" src="eel.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    
+</body>
+</html>
